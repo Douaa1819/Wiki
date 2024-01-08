@@ -22,10 +22,7 @@
         transition: opacity 0.5s ease-in-out;
     }
 
-    #loginForm {
-        opacity: 1;
-        transition: opacity 0.5s ease-in-out;
-    }
+
 
     .form-container {
         background-color: #F5F5F5; 
@@ -54,7 +51,7 @@
     }
 
     .form-container button {/* Marron clair */
-        color: #FFFFFF;
+        color: #000;
         padding: 12px;
         border: none;
         border-radius: 6px;
@@ -96,17 +93,17 @@
             </div>
          
             <div class="text-center">
-                <input class="bg-#8B4513 text-white py-2 px-4 rounded-full cursor-pointer" type="submit" name="signup" value="Sign Up">
+                <input class="bg-#8B4513 text-gray py-2 px-8 rounded-xl cursor-pointer border border-#8B4513 hover:bg-gray-300 hover:text-#8B4513 duration-300 ease-in-out" type="submit" name="signup" value="Sign Up">
             </div>
         </form>
         <div class="text-center mt-4">
-            <button id="showLoginFormBtn" class="text-#1E90FF hover:underline cursor-pointer">Already have an account? Login</button>
+            <button id="showLoginFormBtn" class=" hover:underline cursor-pointer">Already have an account? Login</button>
         </div>
     </div>
 
     <div id="loginForm" class="form-container mt-8">
         <div class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-gray-800">Login</h1>
+            <h1 class="text-3xl font-bold text-gray-900">Sign In</h1>
         </div>
         <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-4">
@@ -116,7 +113,7 @@
                 <input class="w-full p-2 border-b-2 border-gray-300 focus:outline-none focus:border-#00BFFF" type="password" name="password" placeholder="Password">
             </div>
             <div class="text-center mt-5">
-                <input class="bg-#8B4513 text-white py-2 px-8 rounded-xl cursor-pointer border border-#8B4513 hover:bg-white hover:text-#8B4513 duration-300 ease-in-out" type="submit" name="login" value="Login">
+                <input class="bg-#8B4513 text-gray py-2 px-8 rounded-xl cursor-pointer border border-#8B4513 hover:bg-gray-300 hover:text-#8B4513 duration-300 ease-in-out" type="submit" name="login" value="Login">
             </div>
         </form>
         

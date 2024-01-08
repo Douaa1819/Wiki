@@ -1,52 +1,12 @@
-// add hovered class to selected list item
-let list = document.querySelectorAll(".navigation li");
+document.getElementById('iconMenu').addEventListener('click', openMenu);
+document.getElementById('burgerMenu').querySelector('.fa-times').addEventListener('click', toggleMenu);
 
-function activeLink() {
-  list.forEach((item) => {
-    item.classList.remove("hovered");
-  });
-  this.classList.add("hovered");
+function openMenu() {
+    document.getElementById('burgerMenu').classList.remove('hidden');
+    document.getElementById('iconMenu').classList.add('hidden');
 }
 
-list.forEach((item) => item.addEventListener("mouseover", activeLink));
-
-// Menu Toggle
-let toggle = document.querySelector(".toggle");
-let navigation = document.querySelector(".navigation");
-let main = document.querySelector(".main");
-
-toggle.onclick = function () {
-  navigation.classList.toggle("active");
-  main.classList.toggle("active");
-};
-//
-function update() {
-  console.log("aaa");
-}
-// update Genere
-const updateBtns = document.querySelectorAll(".update-btn");
-const genreid = document.querySelector("#id");
-const genreInput = document.querySelector("#genre");
-for (let i = 0; i < updateBtns.length; i++) {
-  updateBtns[i].addEventListener("click", () => {
-    console.log(updateBtns[i].attributes.value);
-    console.log(updateBtns[i].attributes.value.value);
-    console.log(updateBtns[i].dataset.key);
-    genreid.setAttribute("value", updateBtns[i].dataset.key);
-    genreInput.value = updateBtns[i].attributes.value.value;
-  });
-}
-//Approve Parol
-const approve_btn = document.querySelectorAll(".approve_btn");
-const lyrics_id = document.querySelector("#idlyrics");
-const email_input = document.querySelector("#email");
-
-for (let i = 0; i < approve_btn.length; i++) {
-  approve_btn[i].addEventListener("click", () => {
-    // console.log("test");
-    console.log(approve_btn[i].dataset.key);
-    console.log(approve_btn[i].attributes.value.value);
-    lyrics_id.setAttribute("value", approve_btn[i].dataset.key);
-    email_input.value = approve_btn[i].attributes.value.value;
-  });
+function toggleMenu() {
+    document.getElementById('burgerMenu').classList.add('hidden');
+    document.getElementById('iconMenu').classList.remove('hidden');
 }
