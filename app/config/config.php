@@ -9,6 +9,6 @@ define('DB_NAME', 'wiki');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 
-define('URLROOT', 'http://localhost/WIKI');
+define('URLROOT', 'http://localhost/Wiki');
 
-define('SITENAME', 'WIKI');
+define('SITENAME', 'Wiki');
